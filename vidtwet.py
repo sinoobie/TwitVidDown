@@ -1,4 +1,4 @@
-import requests,sys,os,time
+import requests,sys,os
 from bs4 import BeautifulSoup as Bs
 
 class MedDown:
@@ -44,6 +44,13 @@ class MedDown:
 		sys.exit(f"\n\033[0m\n[+] Success downloaded '{judul}'\n[!] File saved in folder 'result'")
 
 
+os.system('clear')
+print("""
+#########################################
+#	[Twitter Video Downloader]	#
+#	     [By KANG-NEWBIE]		#
+#########################################
+""")
 tw=MedDown()
 linkna=input("[?] Link tweetnya: ")
 lk=tw.grap(linkna)
